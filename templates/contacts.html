@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | ЖАРА</title>
+    <!-- Подключаем Bootstrap через CDN (удаленный репозиторий) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- ХЕДЕР (Header) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">ЖАРА</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Контакты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Афиша</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- БОДИ (Body) -->
+    <main class="container my-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-4">
+                <h1 class="display-5">Свяжитесь с нами</h1>
+                <p class="lead">Закажите выступление группы «ЖАРА» или задайте любой вопрос</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Блок с контактной информацией -->
+            <div class="col-md-6">
+                <div class="card text-bg-primary h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Наши контакты</h3>
+                        <p class="card-text">Мы всегда на связи и готовы обсудить ваш праздник.</p>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-2">📞 <strong>Менеджер:</strong> +7 910 616-47-60</li>
+                            <li class="mb-2">💬 <strong>Telegram:</strong> @earthwormjm</li>
+                            <li class="mb-2">📍 <strong>Города:</strong> Москва, Санкт-Петербург</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Форма обратной связи -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Оставьте заявку</h3>
+                        <!-- Атрибут action пустой, так как мы пока тестируем сервер -->
+                        <form action="/" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Ваше имя</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Иван" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Телефон</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 999 123 45 67" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Сообщение</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Напишите нам..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ФУТЕР (Footer) -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-1">© 2026 Кавер-группа «ЖАРА». Все права защищены.</p>
+            <a href="#" class="text-white mx-2">VK</a>
+            <a href="#" class="text-white mx-2">Telegram</a>
+        </div>
+    </footer>
+
+    <!-- Подключаем JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
